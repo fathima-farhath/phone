@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    overflow-y: hidden;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    align-items: center;
+background: linear-gradient(to right,#9c27b0,#8ecdff);
+}
+nav{
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    padding:15px 75px ;
+    align-items: center;
+    display: flex;
+    z-index: 1;
+}
+.logo
+{
+    flex-basis: 20%;
+}
+.logo img{
+    height: 50px;
+}
+.nav-links{
+    margin-left: 500px;
+}
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 50px ;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top:50%;
+    left:-10%;
+    transform: translateY(-50%);
+}
+#circle{
+    width:1000px;
+    height: 1000px;
+    position: absolute;
+    
+    top:0;
+    left:0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.feature{
+position: absolute;
+display: flex;
+color: #fff;
+}
+.feature div{
+margin-left: 15px;
+}
+
+.feature img{
+    width: 70px;
+}
+.one{
+    top:450px;
+    right: 50px;
+}
+.two{
+    top:150px;
+    left:300px;
+    transform: rotate(-90deg);
+}
+.three{
+    bottom:450px;
+    left: 50px;
+    transform: rotate(180deg);
+}
+.four{
+    bottom:100px;
+    right:300px;
+    transform: rotate(-270deg);
+}
+ .mobile{
+     width: 160px;
+     position: absolute;
+     top: 50%;
+     left: 40%;
+     transform: translateY(-50%);
+     z-index: 2;
+ }
+ .controls{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+ }
+ #upbtn{
+     cursor: pointer;
+     width: 15px;
+ }
+ #downbtn{
+    cursor: pointer;
+    width: 15px;
+    transform: rotate(180deg);
+}
+.overlay
+{ z-index: 2;
+    width: 0;
+    height: 0;
+    border-top: 500px solid #fff;
+     border-right: 500px solid transparent;
+     border-bottom: 500px solid #fff;
+     border-left: 500px solid #fff;
+}
